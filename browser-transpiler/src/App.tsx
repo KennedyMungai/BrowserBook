@@ -30,7 +30,7 @@ function App() {
 
     // console.log(result);
 
-    setCode(result.code);
+    setCode(result.outoutFiles[0]);
   };
 
   useEffect(() => {
