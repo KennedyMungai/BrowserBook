@@ -19,6 +19,8 @@ function App() {
     if (!ref.current) {
       return;
     }
+
+    console.log(ref.current);
   };
 
   useEffect(() => {
