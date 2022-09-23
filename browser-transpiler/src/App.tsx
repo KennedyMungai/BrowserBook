@@ -13,7 +13,7 @@ function App() {
     <div>
       <textarea onChange={(e) => setInput(e.target.value)} value={input}></textarea>
       <div className="">
-        <button>Submit</button>
+        <button onClick={onClick}>Submit</button>
       </div>
       <pre>{code}</pre>
     </div>
