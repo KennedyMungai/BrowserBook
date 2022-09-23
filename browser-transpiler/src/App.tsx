@@ -28,7 +28,7 @@ function App() {
       plugins: [unpkgPathPlugin()]
     });
 
-    console.log(result);
+    // console.log(result);
 
     setCode(result.code);
   };
