@@ -5,7 +5,7 @@ import * as esbuild from 'esbuild-wasm';
 function App() {
   const [input, setInput] = useState('');
   const [code, setCode] = useState('');
-  const ref = useRef();
+  const ref = useRef<any>();
 
   const startService = async () => {
     const service = await esbuild.startService({
