@@ -4,7 +4,11 @@ import React from 'react';
 function App() {
   return (
     <div>
-      The app component
+      <textarea></textarea>
+      <div className="">
+        <button>Submit</button>
+      </div>
+      <pre></pre>
     </div>
   );
 }
