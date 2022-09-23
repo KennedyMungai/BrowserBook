@@ -19,6 +19,11 @@ function App() {
     console.log(input);
   };
 
+  useEffect(() => {
+    startService();
+  }, []);
+  
+
   return (
     <div>
       <textarea onChange={(e) => setInput(e.target.value)} value={input}></textarea>
