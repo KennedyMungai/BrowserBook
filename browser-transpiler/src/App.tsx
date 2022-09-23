@@ -28,9 +28,9 @@ function App() {
     console.log(result);
   };
 
-  useEffect(() => {
-    startService();
-  }, []);
+  // useEffect(() => {
+  //   startService();
+  // }, []);
   
 
   return (
