@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import * as esbuild from 'esbuild-wasm';
 
 
 function App() {
