@@ -11,7 +11,7 @@ function App() {
       <div className="">
         <button>Submit</button>
       </div>
-      <pre></pre>
+      <pre>{code}</pre>
     </div>
   );
 }
