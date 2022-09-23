@@ -22,12 +22,6 @@ export const unpkgPathPlugin = () => {
             `,
           };
         }
-        else {
-            return {
-                loader: 'jsx',
-                contents: 'export default "Hi there!"',
-            }
-        }
       });
     },
   };
