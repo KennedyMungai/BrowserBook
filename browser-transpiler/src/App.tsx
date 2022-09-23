@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div>
-      <textarea></textarea>
+      <textarea onChange={(e) => setInput(e.target.value)}></textarea>
       <div className="">
         <button>Submit</button>
       </div>
