@@ -48,7 +48,8 @@ export const unpkgPathPlugin = () => {
 
         return {
           loader: 'jsx',
-          contents: data
+          contents: data,
+          resolveDir: new URL('./', request.responseURL).pathname
         };
       });
     },
