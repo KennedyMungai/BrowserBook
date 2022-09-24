@@ -12,7 +12,8 @@ export const unpkgPathPlugin = () => {
           return { path: args.path, namespace: 'a' };
         } else if (args.path === 'tiny-text-pkg') {
           return {
-            path:'https://unpkg.com/tiny-test-pkg@1.0.0/index.js'
+            path:'https://unpkg.com/tiny-test-pkg@1.0.0/index.js',
+            namespace: 'a'
           }
         }
       });
