@@ -10,6 +10,10 @@ export const unpkgPathPlugin = () => {
 
         if (args.path === 'index.js') {
           return { path: args.path, namespace: 'a' };
+        } else if (args.path === 'tiny-text-pkg') {
+          return {
+            path:''
+          }
         }
       });
 
