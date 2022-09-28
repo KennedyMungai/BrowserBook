@@ -24,6 +24,7 @@ export const unpkgPathPlugin = (inputCode: string) => {
         };
       });
 
+      // Handle the main file of a module
       build.onResolve({ filter: /.*/ }, async (args: any) => {
         return {
           namespace: 'a',
