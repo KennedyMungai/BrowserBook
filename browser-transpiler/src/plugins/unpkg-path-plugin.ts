@@ -7,7 +7,7 @@ const fileCache = localforage.createInstance({
   name: 'filecache'
 });
 
-export const unpkgPathPlugin = (inputCode: string) => {
+export const unpkgPathPlugin = () => {
   return {
     name: 'unpkg-path-plugin',
     setup(build: esbuild.PluginBuild) {
