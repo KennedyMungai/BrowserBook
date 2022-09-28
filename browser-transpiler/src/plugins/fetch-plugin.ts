@@ -1,4 +1,4 @@
-
+import * as esbuild from 'esbuild-wasm';
 
 
 export const fetchPlugin = () => {
