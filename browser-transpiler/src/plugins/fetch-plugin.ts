@@ -1,4 +1,5 @@
 import * as esbuild from 'esbuild-wasm';
+import localforage from 'localforage';
 
 
 export const fetchPlugin = () => {
