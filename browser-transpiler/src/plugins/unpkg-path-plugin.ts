@@ -63,6 +63,8 @@ export const unpkgPathPlugin = () => {
 
         // Store the response in cache
         await fileCache.setItem(args.path, result);
+
+        return result;
       });
     },
   };
