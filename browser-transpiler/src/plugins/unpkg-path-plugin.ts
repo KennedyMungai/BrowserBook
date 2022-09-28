@@ -47,7 +47,7 @@ export const unpkgPathPlugin = () => {
           };
         }
 
-        
+        const cachedResult = await fileCache.getItem(args.path);
 
         const { data, request } = await axios.get(args.path);
 
