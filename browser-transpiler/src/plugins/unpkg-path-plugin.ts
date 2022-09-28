@@ -31,8 +31,6 @@ export const unpkgPathPlugin = (inputCode: string) => {
           path: `https://unpkg.com/${args.path}`
         }
       });
-
-      
     },
   };
 };
