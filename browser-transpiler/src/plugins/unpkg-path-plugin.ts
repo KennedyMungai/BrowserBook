@@ -16,6 +16,7 @@ export const unpkgPathPlugin = (inputCode: string) => {
         return { path: 'index.js', namespace: 'a' };
       });
 
+      // Handle relative paths in a module
       build.onResolve({ filter: /^\.+\// }, (args: any) => {
         return {
           namespace: 'a',
