@@ -5,7 +5,7 @@ import localforage from 'localforage';
 
 const fileCache = localforage.createInstance({
     name: 'filecache'
-}); 
+});
 
 
 export const fetchPlugin = (inputCode: string) => {
@@ -28,12 +28,12 @@ export const fetchPlugin = (inputCode: string) => {
 
                 const { data, request } = await axios.get(args.path);
 
-                const fileType = args.path.match(/.css$/) ? 'css' : 'jsx' ;
+                const fileType = args.path.match(/.css$/) ? 'css' : 'jsx';
 
-                const contents = fileType === 'css' ? 
+                const contents = fileType === 'css' ?
                     `
                         const style = document.createElement('style');
-                        style.innerText = 'body { background-color: "red" }';
+                        style.innerText = '';
                         document.head.appendChild(style);
                     ` : data;
 
