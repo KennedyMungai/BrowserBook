@@ -30,7 +30,9 @@ export const fetchPlugin = (inputCode: string) => {
 
                 const fileType = args.path.match(/.css$/) ? 'css' : 'jsx';
 
-                const escaped = data.replace(/\n/g, '');
+                const escaped = data
+                    .replace(/\n/g, '')
+                    .replace(/"/g, '\\"');
 
                 const contents = fileType === 'css' ?
                     `
