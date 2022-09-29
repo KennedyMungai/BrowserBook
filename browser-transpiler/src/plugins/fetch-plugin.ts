@@ -32,7 +32,8 @@ export const fetchPlugin = (inputCode: string) => {
 
                 const escaped = data
                     .replace(/\n/g, '')
-                    .replace(/"/g, '\\"');
+                    .replace(/"/g, '\\"')
+                    .replace(/'/g, "\\'");
 
                 const contents = fileType === 'css' ?
                     `
