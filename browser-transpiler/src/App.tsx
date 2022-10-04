@@ -37,7 +37,7 @@ function App() {
       }
     });
 
-    setCode(result.outputFiles[0].text);
+    // setCode(result.outputFiles[0].text);
   };
 
   useEffect(() => {
