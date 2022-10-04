@@ -38,7 +38,7 @@ function App() {
     });
 
     // setCode(result.outputFiles[0].text);
-    iframe.current.postMessage(result.outputFiles[0].text, '*');
+    iframe.current.contentWindow.postMessage(result.outputFiles[0].text, '*');
   };
 
   useEffect(() => {
