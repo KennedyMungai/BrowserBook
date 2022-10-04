@@ -62,6 +62,8 @@ function App() {
   );
 }
 
-const html = ``;
+const html = `
+<h1>Local HTML document</h1>
+`;
 
 export default App;
