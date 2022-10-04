@@ -40,7 +40,7 @@ function App() {
 
     try {
       eval(result.outputFiles[0].text);
-    } catch (error) {
+    } catch (err) {
 
     }
   };
