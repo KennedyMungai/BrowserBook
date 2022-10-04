@@ -44,9 +44,9 @@ function App() {
   }, []);
 
   const html = `
-  <script>
-    ${code}
-  </script>
+  <html>
+    
+  </html>
   `;
 
   return (
