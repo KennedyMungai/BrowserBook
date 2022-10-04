@@ -52,6 +52,9 @@ function App() {
       <div id='root'></div>
 
       <script>
+        window.addEventListener('message', (event) => {
+          
+        }, false);
       </script>
     </body>
   </html>
