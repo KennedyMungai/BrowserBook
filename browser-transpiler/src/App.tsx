@@ -43,6 +43,11 @@ function App() {
     startService();
   }, []);
 
+  const html = `
+  <script>
+    ${code}
+  </script>
+  `;
 
   return (
     <div>
