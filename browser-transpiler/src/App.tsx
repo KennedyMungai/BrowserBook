@@ -45,7 +45,8 @@ function App() {
 
   const html = `
   <html>
-    
+    <head>
+    </head>
   </html>
   `;
 
