@@ -56,7 +56,7 @@ function App() {
         <button onClick={onClick}>Submit</button>
       </div>
       <pre>{code}</pre>
-      <iframe sandbox='' srcDoc={html} />
+      <iframe sandbox='' srcDoc={html} title="Script window" />
     </div>
   );
 }
