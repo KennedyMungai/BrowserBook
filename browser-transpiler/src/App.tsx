@@ -50,6 +50,9 @@ function App() {
 
     <body>
       <div id='root'></div>
+
+      <script>
+      </script>
     </body>
   </html>
   `;
