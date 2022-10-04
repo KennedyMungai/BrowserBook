@@ -62,4 +62,6 @@ function App() {
   );
 }
 
+const html = ``;
+
 export default App;
