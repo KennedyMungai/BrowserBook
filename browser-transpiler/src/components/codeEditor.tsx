@@ -9,6 +9,10 @@ interface CodeEditorProps {
 
 
 const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
+    const onEditorDidMount = () => {
+
+    };
+
     return <MonacoEditor
         height='500px'
         theme='vs-dark'
@@ -24,6 +28,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
             automaticLayout: true
         }}
         value={initialValue}
+        editorDidMount={onEditorDidMount}
     />
 }
 
