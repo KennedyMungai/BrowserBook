@@ -17,6 +17,7 @@ const CodeEditor = () => {
             scrollBeyondLastLine: false,
             automaticLayout: true
         }}
+        value='const a = 1;'
     />
 }
 
