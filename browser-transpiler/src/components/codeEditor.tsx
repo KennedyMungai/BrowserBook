@@ -9,6 +9,7 @@ const CodeEditor = () => {
         language='javascript'
         options={{
             wordWrap: 'on',
+            minimap: { enabled: false }
         }}
     />
 }
