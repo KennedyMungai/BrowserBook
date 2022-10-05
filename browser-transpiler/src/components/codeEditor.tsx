@@ -15,6 +15,7 @@ const CodeEditor = () => {
             lineNumbersMinChars: 3,
             fontSize: 16,
             scrollBeyondLastLine: false,
+            automaticLayout: true
         }}
     />
 }
