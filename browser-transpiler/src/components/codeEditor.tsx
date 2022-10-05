@@ -30,7 +30,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
             semi: true,
         });
 
-
+        editorRef.current.setValue(formatted);
     };
 
     return (
