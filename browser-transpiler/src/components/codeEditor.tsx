@@ -26,7 +26,8 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
 
         const formatted = prettier.format(unformatted, {
             parser: 'babel',
-            plugins: [parser]
+            plugins: [parser],
+            semi: true,
         });
 
 
