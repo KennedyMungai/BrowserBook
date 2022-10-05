@@ -2,6 +2,11 @@ import React from 'react';
 import MonacoEditor from '@monaco-editor/react';
 
 
+interface CodeEditorProps {
+
+};
+
+
 const CodeEditor = () => {
     return <MonacoEditor
         height='500px'
