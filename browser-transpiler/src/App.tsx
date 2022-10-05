@@ -74,6 +74,7 @@ function App() {
     <div>
       <CodeEditor
         initialValue='const a = 1'
+        onChange={(value) => setInput(value)}
       />
 
       <textarea onChange={(e) => setInput(e.target.value)} value={input}></textarea>
