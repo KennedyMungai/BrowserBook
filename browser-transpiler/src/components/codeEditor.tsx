@@ -7,7 +7,7 @@ interface CodeEditorProps {
 };
 
 
-const CodeEditor: React.FC<CodeEditorProps> = () => {
+const CodeEditor: React.FC<CodeEditorProps> = ({ initialValue }) => {
     return <MonacoEditor
         height='500px'
         theme='vs-dark'
@@ -22,7 +22,7 @@ const CodeEditor: React.FC<CodeEditorProps> = () => {
             scrollBeyondLastLine: false,
             automaticLayout: true
         }}
-        value='const a = 1;'
+        value={initialValue}
     />
 }
 
