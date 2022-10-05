@@ -7,7 +7,7 @@ interface CodeEditorProps {
 };
 
 
-const CodeEditor = () => {
+const CodeEditor: React.FC<CodeEditorProps> = () => {
     return <MonacoEditor
         height='500px'
         theme='vs-dark'
