@@ -12,6 +12,7 @@ const CodeEditor = () => {
             minimap: { enabled: false },
             showUnused: false,
             folding: false,
+            lineNumbersMinChars: 3,
 
         }}
     />
