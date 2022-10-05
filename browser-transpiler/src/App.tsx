@@ -59,7 +59,7 @@ function App() {
             eval(event.data);
           } catch (err) {
             const root = document.querySelector('#root');
-            root.innerHTML = '<div>' + err +'</div>';
+            root.innerHTML = '<div style="color: red;">' + err +'</div>';
           }
         }, false);
       </script>
