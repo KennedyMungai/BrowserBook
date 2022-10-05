@@ -9,7 +9,7 @@ interface CodeEditorProps {
 
 
 const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
-    const onEditorDidMount = () => {
+    const onEditorDidMount = (getValue: () => string) => {
 
     };
 
