@@ -3,9 +3,7 @@ import MonacoEditor from '@monaco-editor/react';
 
 
 const codeEditor = () => {
-    return (
-        <div>code-editor</div>
-    )
+    return <MonacoEditor />
 }
 
 export default codeEditor;
