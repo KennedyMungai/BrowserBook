@@ -17,6 +17,10 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
         });
     };
 
+    const onFormatClick = () => {
+
+    };
+
     return (
         <>
             <div className="">
