@@ -6,7 +6,6 @@ import { fetchPlugin } from './plugins/fetch-plugin';
 
 function App() {
   const [input, setInput] = useState('');
-  const [code, setCode] = useState('');
   const ref = useRef<any>();
   const iframe = useRef<any>()
 
