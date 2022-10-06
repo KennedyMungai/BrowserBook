@@ -9,10 +9,6 @@ function App() {
   const [input, setInput] = useState<string>('');
   const ref = useRef<any>();
 
-  const startService = async () => {
-    ref.current = 
-  };
-
   const onClick = async () => {
     if (!ref.current) {
       return;
