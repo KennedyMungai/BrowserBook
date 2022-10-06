@@ -57,7 +57,7 @@ function App() {
       <div className="">
         <button onClick={onClick}>Submit</button>
       </div>
-      <Preview />
+      <Preview code={code} />
     </div>
   );
 }
