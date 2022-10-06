@@ -8,7 +8,8 @@ import Preview from './components/Preview';
 
 
 function App() {
-  const [input, setInput] = useState('');
+  const [code, setCode] = useState<string>('');
+  const [input, setInput] = useState<string>('');
   const ref = useRef<any>();
 
   const startService = async () => {
