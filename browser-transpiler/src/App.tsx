@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
-import { fetchPlugin } from './plugins/fetch-plugin';
 import CodeEditor from './components/codeEditor';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
 import Preview from './components/Preview';
