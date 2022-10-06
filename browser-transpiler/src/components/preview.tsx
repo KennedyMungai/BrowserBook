@@ -7,9 +7,7 @@ interface PreviewProps {
 
 
 const preview: React.FC<PreviewProps> = ({ code }) => {
-    return (
-        <div>preview</div>
-    )
+    return <iframe />;
 }
 
 export default preview;
