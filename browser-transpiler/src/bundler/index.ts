@@ -27,4 +27,6 @@ export default async (rawCode: string) => {
             global: 'window'
         }
     });
+
+    return result.outputFiles[0].text;
 };
