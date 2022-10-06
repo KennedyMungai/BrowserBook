@@ -3,6 +3,9 @@ import { unpkgPathPlugin } from '../plugins/unpkg-path-plugin';
 import { fetchPlugin } from '../plugins/fetch-plugin';
 
 
+let service: esbuild.Service;
+
+
 export default async (rawCode: string) => {
     await esbuild.startService({
         worker: true,
