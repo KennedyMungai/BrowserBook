@@ -29,7 +29,7 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
             parser: 'babel',
             plugins: [parser],
             semi: true,
-        });
+        }).replace(/\n$/, "");
 
         editorRef.current.setValue(formatted);
     };
