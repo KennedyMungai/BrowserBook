@@ -6,7 +6,7 @@ import CodeCell from './components/code-cell';
 function App() {
   return (
     <div>
-      <codeCell />
+      <CodeCell />
     </div>
   );
 }
