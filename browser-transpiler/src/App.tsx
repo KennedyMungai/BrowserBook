@@ -7,7 +7,6 @@ import Preview from './components/Preview';
 function App() {
   const [code, setCode] = useState<string>('');
   const [input, setInput] = useState<string>('');
-  const ref = useRef<any>();
 
   const onClick = async () => {
     setCode(result.outputFiles[0].text);
