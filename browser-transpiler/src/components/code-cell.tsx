@@ -5,7 +5,7 @@ import Preview from './components/Preview';
 import bundle from './bundler';
 
 
-function codeCell() {
+const codeCell = () => {
     const [code, setCode] = useState<string>('');
     const [input, setInput] = useState<string>('');
 
@@ -28,5 +28,3 @@ function codeCell() {
         </div>
     );
 }
-
-export default codeCell;
