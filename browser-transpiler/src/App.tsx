@@ -17,7 +17,6 @@ function App() {
       worker: true,
       wasmURL: 'https://unpkg.com/esbuild-wasm@0.8.27/esbuild.wasm'
     });
-
   };
 
   const onClick = async () => {
