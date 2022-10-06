@@ -20,7 +20,7 @@ export default async (rawCode: string) => {
         write: false,
         plugins: [
             unpkgPathPlugin(),
-            fetchPlugin(input)
+            fetchPlugin(rawCode)
         ],
         define: {
             'process.env.NODE_ENV': '"production"',
