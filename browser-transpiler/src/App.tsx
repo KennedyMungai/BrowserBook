@@ -12,7 +12,7 @@ function App() {
   const onClick = async () => {
     const output = await bundler(input);
 
-    setCode(result.outputFiles[0].text);
+    setCode(output);
   };
 
   return (
