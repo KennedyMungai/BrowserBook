@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
+import codeCell from './components/code-cell';
 
 
 function App() {
