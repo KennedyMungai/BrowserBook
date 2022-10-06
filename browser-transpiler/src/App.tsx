@@ -31,10 +31,6 @@ function App() {
     setCode(result.outputFiles[0].text);
   };
 
-  useEffect(() => {
-    startService();
-  }, []);
-
   return (
     <div>
       <CodeEditor
