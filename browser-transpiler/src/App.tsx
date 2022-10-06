@@ -11,7 +11,6 @@ function App() {
 
   const onClick = async () => {
     const output = await bundler(input);
-
     setCode(output);
   };
 
