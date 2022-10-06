@@ -6,7 +6,7 @@ interface PreviewProps {
 };
 
 
-const preview = () => {
+const preview: React.FC<PreviewProps> = () => {
     return (
         <div>preview</div>
     )
