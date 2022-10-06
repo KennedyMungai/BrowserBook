@@ -4,7 +4,7 @@ import Preview from './Preview';
 import bundle from '../bundler';
 
 
-const codeCell = () => {
+const CodeCell = () => {
     const [code, setCode] = useState<string>('');
     const [input, setInput] = useState<string>('');
 
@@ -28,4 +28,4 @@ const codeCell = () => {
     );
 }
 
-export default codeCell;
+export default CodeCell;
