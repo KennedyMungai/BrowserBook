@@ -4,6 +4,7 @@ import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 import { fetchPlugin } from './plugins/fetch-plugin';
 import CodeEditor from './components/codeEditor';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
+import preview from './components/preview';
 
 
 function App() {
