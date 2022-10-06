@@ -53,7 +53,6 @@ function App() {
         onChange={(value) => setInput(value)}
       />
 
-      <textarea onChange={(e) => setInput(e.target.value)} value={input}></textarea>
       <div className="">
         <button onClick={onClick}>Submit</button>
       </div>
