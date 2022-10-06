@@ -27,3 +27,5 @@ const codeCell = () => {
         </div>
     );
 }
+
+export default codeCell;
