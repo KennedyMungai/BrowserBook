@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import CodeEditor from './components/codeEditor';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
-import Preview from './components/Preview';
-import bundle from './bundler';
 
 
 function App() {
