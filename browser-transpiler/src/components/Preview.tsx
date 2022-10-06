@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 
 interface PreviewProps {
-    code: string;
+  code: string;
 };
 
 const html = `
@@ -28,16 +28,16 @@ const html = `
   </html>
   `;
 
-const preview: React.FC<PreviewProps> = ({ code }) => {
-    const iframe = useRef<any>();
+const Preview: React.FC<PreviewProps> = ({ code }) => {
+  const iframe = useRef<any>();
 
-    useEffect(() => {
-        iframe.current.srcdoc = html;
-        iframe.current.contentWindow.postMessage(code, '*');
-    }, [code]);
+  useEffect(() => {
+    iframe.current.srcdoc = html;
+    iframe.current.contentWindow.postMessage(code, '*');
+  }, [code]);
 
 
-    return <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} />;
+  return <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} />;
 }
 
-export default preview;
+export default Preview;
