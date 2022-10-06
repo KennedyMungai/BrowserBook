@@ -24,7 +24,10 @@ const CodeEditor: React.FC<CodeEditorProps> = ({ onChange, initialValue }) => {
         });
 
         const highlighter = new Highlighter(
-
+            // @ts-ignore
+            window.monaco,
+            codeShift,
+            monacoEditor,
         );
     };
 
