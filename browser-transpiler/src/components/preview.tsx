@@ -37,7 +37,7 @@ const preview: React.FC<PreviewProps> = ({ code }) => {
     }, [code]);
 
 
-    return <iframe />;
+    return <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} />;
 }
 
 export default preview;

@@ -53,7 +53,7 @@ function App() {
       <div className="">
         <button onClick={onClick}>Submit</button>
       </div>
-      <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} />
+      <iframe />
     </div>
   );
 }
