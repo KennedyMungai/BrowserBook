@@ -4,7 +4,7 @@ import { unpkgPathPlugin } from './plugins/unpkg-path-plugin';
 import { fetchPlugin } from './plugins/fetch-plugin';
 import CodeEditor from './components/codeEditor';
 import 'bulmaswatch/superhero/bulmaswatch.min.css';
-import preview from './components/preview';
+import Preview from './components/Preview';
 
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
       <div className="">
         <button onClick={onClick}>Submit</button>
       </div>
-      <iframe />
+      <Preview />
     </div>
   );
 }
