@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 
 interface PreviewProps {
@@ -29,6 +29,8 @@ const html = `
   `;
 
 const preview: React.FC<PreviewProps> = ({ code }) => {
+    const iframe = useRef<any>();
+
     return <iframe />;
 }
 
