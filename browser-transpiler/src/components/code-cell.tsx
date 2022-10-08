@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CodeEditor from './codeEditor';
 import Preview from './Preview';
 import bundle from '../bundler';
+import Resizable from './resizable';
 
 
 const CodeCell = () => {
