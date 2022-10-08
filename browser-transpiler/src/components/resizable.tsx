@@ -15,7 +15,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
         resizeHandles={['s']}
     >
         {children}
-    </ResizableBox >;
+    </ResizableBox>;
 }
 
 export default Resizable;
