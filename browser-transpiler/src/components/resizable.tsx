@@ -26,9 +26,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
         }
     }
 
-    return <ResizableBox
-
-    >
+    return <ResizableBox {...resizableProps}>
         {children}
     </ResizableBox >;
 }
