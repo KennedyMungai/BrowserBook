@@ -44,7 +44,6 @@ const Preview: React.FC<PreviewProps> = ({ code }) => {
       srcDoc={html}
       title="Script window"
       ref={iframe}
-      style={{ backgroundColor: "white" }}
     />
   </div>;
 }
