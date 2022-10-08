@@ -12,6 +12,13 @@ interface ResizableProps {
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     let resizableProps: ResizableBoxProps;
 
+    useEffect(() => {
+        const listener = () => {
+            console.log(window.innerWidth, window.innerHeight);
+        }
+    }, []);
+
+
     if (direction === 'horizontal') {
         resizableProps = {
             className: 'resize-horizontal',
