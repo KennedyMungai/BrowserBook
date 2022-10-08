@@ -21,10 +21,6 @@ const CodeCell = () => {
                     initialValue='const a = 1'
                     onChange={(value) => setInput(value)}
                 />
-
-                <div className="">
-                    <button onClick={onClick}>Submit</button>
-                </div>
                 <Preview code={code} />
             </div>
         </Resizable>
