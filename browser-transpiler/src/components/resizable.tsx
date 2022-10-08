@@ -7,7 +7,7 @@ interface ResizableProps {
 };
 
 
-const Resizable: React.FC<> = () => {
+const Resizable: React.FC<ResizableProps> = () => {
     return (
         <div>resizable</div>
     )
