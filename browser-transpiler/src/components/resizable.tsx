@@ -12,6 +12,16 @@ interface ResizableProps {
 const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     let resizableProps;
 
+    if (direction === 'horizontal') {
+        resizableProps = {
+
+        }
+    } else {
+        resizableProps = {
+
+        }
+    }
+
     return <ResizableBox
         height={300}
         width={Infinity}
