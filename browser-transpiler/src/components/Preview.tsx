@@ -37,7 +37,7 @@ const Preview: React.FC<PreviewProps> = ({ code }) => {
   }, [code]);
 
 
-  return <div className="">
+  return <div className="preview-wrapper">
     <iframe
       sandbox='allow-scripts'
       srcDoc={html}
