@@ -37,7 +37,9 @@ const Preview: React.FC<PreviewProps> = ({ code }) => {
   }, [code]);
 
 
-  return <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} style={{ backgroundColor: "white" }} />;
+  return <div className="">
+    <iframe sandbox='allow-scripts' srcDoc={html} title="Script window" ref={iframe} style={{ backgroundColor: "white" }} />
+  </div>;
 }
 
 export default Preview;
