@@ -6,6 +6,7 @@
 
 .preview-wrapper iframe {
     height: 100%;
+    width: 100%;
     background-color: white;
 }
 
@@ -17,8 +18,4 @@
     left: 0;
     bottom: 0;
     opacity: 0;
-}
-
-iframe {
-    width: 100%;
 }
