@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ResizableBox, ResizableBoxProps } from 'react-resizable';
 import './resizable.css';
 
