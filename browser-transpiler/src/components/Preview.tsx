@@ -58,7 +58,7 @@ const Preview: React.FC<PreviewProps> = ({ code, err }) => {
       title="Script window"
       ref={iframe}
     />
-    {err && <div></div>}
+    {err && <div>{err}</div>}
   </div>;
 }
 
