@@ -10,7 +10,9 @@ const CodeCell = () => {
     const [input, setInput] = useState<string>('');
 
     useEffect(() => {
+        setTimeout(() => {
 
+        }, 1000);
     }, [input]);
 
 
