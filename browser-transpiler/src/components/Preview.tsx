@@ -40,7 +40,7 @@ const html = `
   </html>
   `;
 
-const Preview: React.FC<PreviewProps> = ({ code }) => {
+const Preview: React.FC<PreviewProps> = ({ code, err }) => {
   const iframe = useRef<any>();
 
   useEffect(() => {
@@ -58,6 +58,7 @@ const Preview: React.FC<PreviewProps> = ({ code }) => {
       title="Script window"
       ref={iframe}
     />
+    {err && <div></div>}
   </div>;
 }
 
