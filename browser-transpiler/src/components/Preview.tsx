@@ -23,6 +23,7 @@ const html = `
         };
 
         window.addEventListener('error', (event) => {
+          event.PreventDefault();
           handleError(event.error);
         });
 
