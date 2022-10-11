@@ -16,7 +16,8 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
 
     useEffect(() => {
         const listener = () => {
-
+            setInnerHeight(window.innerHeight);
+            setInnerWidth(window.innerWidth);
         };
 
         window.addEventListener('resize', listener);
