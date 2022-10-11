@@ -16,6 +16,10 @@ const html = `
       <div id='root'></div>
 
       <script>
+        const handleError = (err) => {
+
+        };
+
         window.addEventListener('message', (event) => {
           try {
             eval(event.data);
