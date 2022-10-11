@@ -11,14 +11,14 @@ const CodeCell = () => {
 
     useEffect(() => {
         setTimeout(() => {
-
+            const output = await bundle(input);
+            setCode(output);
         }, 1000);
     }, [input]);
 
 
     const onClick = async () => {
-        const output = await bundle(input);
-        setCode(output);
+
     };
 
     return (
