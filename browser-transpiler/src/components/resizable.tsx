@@ -13,6 +13,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
     let resizableProps: ResizableBoxProps;
     const [innerHeight, setInnerHeight] = useState<number>(window.innerHeight);
     const [innerWidth, setInnerWidth] = useState<number>(window.innerWidth);
+    const [width, setWidth] = useState<number>(window.innerWidth * 0.75);
 
     useEffect(() => {
         let timer: any;
