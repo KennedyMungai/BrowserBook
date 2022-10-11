@@ -9,6 +9,11 @@ const CodeCell = () => {
     const [code, setCode] = useState<string>('');
     const [input, setInput] = useState<string>('');
 
+    useEffect(() => {
+
+    }, [input]);
+
+
     const onClick = async () => {
         const output = await bundle(input);
         setCode(output);
