@@ -10,7 +10,7 @@ const CodeCell = () => {
     const [input, setInput] = useState<string>('');
 
     useEffect(() => {
-        setTimeout(async () => {
+        const timer = setTimeout(async () => {
             const output = await bundle(input);
             setCode(output);
         }, 1000);
