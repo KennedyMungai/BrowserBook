@@ -4,6 +4,7 @@ import './Preview.css';
 
 interface PreviewProps {
   code: string;
+  err: string;
 };
 
 const html = `
