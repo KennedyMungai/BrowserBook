@@ -43,7 +43,7 @@ const Resizable: React.FC<ResizableProps> = ({ direction, children }) => {
         resizableProps = {
             className: 'resize-horizontal',
             height: Infinity,
-            width: innerWidth * 0.75,
+            width,
             resizeHandles: ['e'],
             maxConstraints: [innerWidth * 0.75, Infinity],
             minConstraints: [innerWidth * 0.2, Infinity],
