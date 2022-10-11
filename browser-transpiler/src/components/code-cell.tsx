@@ -8,6 +8,7 @@ import Resizable from './resizable';
 const CodeCell = () => {
     const [code, setCode] = useState<string>('');
     const [input, setInput] = useState<string>('');
+    const [err, setErr] = useState<string>('');
 
     useEffect(() => {
         const timer = setTimeout(async () => {
