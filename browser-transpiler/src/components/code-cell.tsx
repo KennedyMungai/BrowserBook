@@ -12,7 +12,7 @@ const CodeCell = () => {
     useEffect(() => {
         const timer = setTimeout(async () => {
             const output = await bundle(input);
-            setCode(output);
+            setCode(output.code);
         }, 1000);
 
         return () => {
