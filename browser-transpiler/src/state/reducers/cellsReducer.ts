@@ -24,3 +24,5 @@ const initialState: CellsState = {
 const reducer = (state: CellsState = initialState, action: Action): CellsState => {
 
 };
+
+export default reducer;
