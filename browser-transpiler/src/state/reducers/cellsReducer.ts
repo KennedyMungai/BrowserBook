@@ -11,3 +11,12 @@ interface CellsState {
         [key: string]: Cell;
     }
 }
+
+const initialState: CellsState = {
+    loading: false,
+    error: null,
+    order: [],
+    data: {
+
+    }
+}}
