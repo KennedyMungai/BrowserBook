@@ -14,7 +14,7 @@ const TextEditor: React.FC = () => {
     }
 
     return (
-        <div>
+        <div onClick={() => setEditing(true)}>
             <MDEditor />
         </div>
     )
