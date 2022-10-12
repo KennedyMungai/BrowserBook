@@ -28,7 +28,7 @@ const TextEditor: React.FC = () => {
     if (editing) {
         return (
             <div ref={ref} className='text-editor' >
-                <MDEditor value={value} onChange={(v) => setValue(v)} />
+                <MDEditor value={value} onChange={(v) => setValue(v || '')} />
             </div>
         );
     }
