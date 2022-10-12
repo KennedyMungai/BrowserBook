@@ -5,6 +5,7 @@ import './text-editor.css';
 
 const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState<boolean>(false);
+    const [value, setValue] = useState<string>('# Header');
     const ref = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
