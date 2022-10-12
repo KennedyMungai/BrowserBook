@@ -19,7 +19,7 @@ interface InsertCellBeforeAction {
     type: ActionType.INSERT_CELL_BEFORE;
     payload: {
         id: string,
-        type: 'code' | 'text'
+        type: CellTypes
     };
 }
 
