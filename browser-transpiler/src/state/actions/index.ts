@@ -24,4 +24,8 @@ interface InsertCellBeforeAction {
 
 interface UpdateCellAction {
     type: ActionType.UPDATE_CELL;
+    payload: {
+        id: string,
+        content: string
+    }
 }
