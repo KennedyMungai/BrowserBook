@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState<boolean>(false);
+    const ref = useRef<HTMLDivElement | null>();
 
     useEffect(() => {
         const listener = (event: MouseEvent) => {
