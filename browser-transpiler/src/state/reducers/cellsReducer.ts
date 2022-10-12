@@ -21,7 +21,7 @@ const initialState: CellsState = {
     }
 }
 
-const reducer = (state: CellsState = initialState, action: Action): CellsState => {
+const cellsReducer = (state: CellsState = initialState, action: Action): CellsState => {
     switch (action.type) {
         case ActionType.UPDATE_CELL:
             return state;
@@ -36,4 +36,4 @@ const reducer = (state: CellsState = initialState, action: Action): CellsState =
     }
 };
 
-export default reducer;
+export default cellsReducer;
