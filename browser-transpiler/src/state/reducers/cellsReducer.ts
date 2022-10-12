@@ -32,7 +32,7 @@ const cellsReducer = (state: CellsState = initialState, action: Action): CellsSt
                     ...state.data,
                     [id]: {
                         ...state.data[id],
-                        content: content
+                        content
                     }
                 }
             };
