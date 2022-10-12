@@ -22,7 +22,7 @@ const initialState: CellsState = {
     }
 }
 
-const cellsReducer = (state: CellsState = initialState, action: Action): CellsState => {
+const cellsReducer = produce((state: CellsState = initialState, action: Action): CellsState => {
     switch (action.type) {
         case ActionType.UPDATE_CELL:
             const { id, content } = action.payload;
@@ -46,6 +46,6 @@ const cellsReducer = (state: CellsState = initialState, action: Action): CellsSt
         default:
             return state;
     }
-};
+});
 
 export default cellsReducer;
