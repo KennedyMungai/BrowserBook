@@ -26,8 +26,7 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
     switch (action.type) {
         case ActionType.UPDATE_CELL:
             const { id, content } = action.payload;
-
-
+            state.data[id].content = content;
         case ActionType.DELETE_CELL:
             return state;
         case ActionType.MOVE_CELL:
