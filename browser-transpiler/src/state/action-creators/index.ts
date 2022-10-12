@@ -3,3 +3,5 @@ import { Action } from '../actions';
 
 
 export const updateCell = () => { };
+
+export const deleteCell = () => { };
