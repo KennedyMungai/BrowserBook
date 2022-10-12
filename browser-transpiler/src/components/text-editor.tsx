@@ -10,7 +10,7 @@ const TextEditor: React.FC = () => {
             setEditing(false);
         }
 
-        document.addEventListener('click', listener);
+        document.addEventListener('click', listener, { capture: true });
     }, []);
 
 
