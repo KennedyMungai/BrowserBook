@@ -21,6 +21,6 @@ const initialState: CellsState = {
     }
 }
 
-const reducer = (state: CellsState = initialState, action: Action) => {
+const reducer = (state: CellsState = initialState, action: Action): CellsState => {
 
 };
