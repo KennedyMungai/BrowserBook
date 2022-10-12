@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 
 const TextEditor: React.FC = () => {
-    const [editing, setEditing] = useState<boolean>(true);
+    const [editing, setEditing] = useState<boolean>(false);
 
     if (editing) {
         return (
