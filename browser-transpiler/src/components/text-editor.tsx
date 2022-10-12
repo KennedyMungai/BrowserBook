@@ -6,7 +6,9 @@ const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState<boolean>(false);
 
     useEffect(() => {
-
+        const listener = () => {
+            setEditing(false);
+        }
     }, []);
 
 
