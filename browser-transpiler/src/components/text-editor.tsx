@@ -11,6 +11,10 @@ const TextEditor: React.FC = () => {
         }
 
         document.addEventListener('click', listener, { capture: true });
+
+        return () => {
+            document.removeEventListener('click', listener, { capture: true });
+        };
     }, []);
 
 
