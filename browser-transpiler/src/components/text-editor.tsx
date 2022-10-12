@@ -9,6 +9,8 @@ const TextEditor: React.FC = () => {
         const listener = () => {
             setEditing(false);
         }
+
+        document.addEventListener('click', listener);
     }, []);
 
 
