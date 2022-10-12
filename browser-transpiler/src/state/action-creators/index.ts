@@ -9,10 +9,15 @@ export const updateCell = (id: string, content: string): UpdateCellAction => {
             id,
             content
         }
-    }
+    };
 };
 
-export const deleteCell = (): DeleteCellAction => { };
+export const deleteCell = (id: string): DeleteCellAction => {
+    return {
+        type: ActionType.DELETE_CELL,
+        payload: id
+    }
+};
 
 export const moveCell = (): MoveCellAction => { };
 
