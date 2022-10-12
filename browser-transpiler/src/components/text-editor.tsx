@@ -5,6 +5,11 @@ import React, { useEffect, useState } from 'react';
 const TextEditor: React.FC = () => {
     const [editing, setEditing] = useState<boolean>(false);
 
+    useEffect(() => {
+
+    }, []);
+
+
     if (editing) {
         return (
             <div>
