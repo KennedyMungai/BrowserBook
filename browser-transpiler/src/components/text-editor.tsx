@@ -8,6 +8,10 @@ const TextEditor: React.FC = () => {
 
     useEffect(() => {
         const listener = (event: MouseEvent) => {
+            if (ref.current && event.target && ref.current.contains(event.target as Node)) {
+
+            }
+
             setEditing(false);
         }
 
