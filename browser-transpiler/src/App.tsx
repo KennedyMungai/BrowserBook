@@ -8,9 +8,12 @@ import { store } from './state';
 
 function App() {
   return (
-    <div>
-      <CodeCell />
-    </div>
+    <Provider store={store}>
+      <div>
+        <CodeCell />
+      </div>
+    </Provider>
+
   );
 }
 
