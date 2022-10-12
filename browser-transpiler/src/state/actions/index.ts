@@ -30,3 +30,5 @@ export interface UpdateCellAction {
         content: string
     }
 }
+
+export type Action = MoveCellAction | UpdateCellAction | InsertCellBeforeAction | DeleteCellAction;
