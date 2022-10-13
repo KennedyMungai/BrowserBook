@@ -4,11 +4,10 @@ import { Cell } from '../state';
 
 interface CellListItemProps {
     cell: Cell,
-
 };
 
 
-const CellListItem: React.FunctionComponent<CellListItemProps> = () => {
+const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
     return (
         <div>cell-list-item</div>
     )
