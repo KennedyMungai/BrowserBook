@@ -1,3 +1,4 @@
+import { render } from '@testing-library/react';
 import React from 'react';
 import { useTypedSelector } from '../hooks/use-typed-selector';
 import CellListItem from './cell-list-item';
@@ -10,10 +11,10 @@ const CellList: React.FC = () => {
         });
     });
 
-    const renderedCells = cells.map(cell => <CellListItem />);
+    const renderedCells = cells.map(cell => <CellListItem cell={cell} />);
 
     return (
-        <div>cell-list</div>
+        <div>{renderedCells}</div>
     )
 }
 
