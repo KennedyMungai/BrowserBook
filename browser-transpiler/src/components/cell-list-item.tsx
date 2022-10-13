@@ -11,7 +11,7 @@ interface CellListItemProps {
 
 
 const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
-    let child: JSX.Element;
+    let child: React.ReactNode;
 
     if (cell.type === 'code') {
         child = <CodeCell cell={cell} />;
