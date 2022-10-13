@@ -45,10 +45,19 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
             state.order[targetIndex] = action.payload.id;
             return;
         case ActionType.INSERT_CELL_BEFORE:
+            const cell: Cell = {
+                content: '',
+                type: action.payload.type,
+                id: ''
+            };
             return state;
         default:
             return state;
     }
 });
+
+const randomId = () => {
+    return Math.random().toString(36).substring(2, 5);
+};
 
 export default cellsReducer;
