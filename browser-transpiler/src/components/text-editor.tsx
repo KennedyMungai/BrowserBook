@@ -14,6 +14,8 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
     const [editing, setEditing] = useState<boolean>(false);
     const ref = useRef<HTMLDivElement | null>(null);
 
+    const { updateCell } = useActions();
+
     useEffect(() => {
         const listener = (event: MouseEvent) => {
             if (ref.current && event.target && ref.current.contains(event.target as Node)) {
