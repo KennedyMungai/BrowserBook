@@ -10,7 +10,6 @@ interface TextEditorProps {
 
 const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
     const [editing, setEditing] = useState<boolean>(false);
-    const [value, setValue] = useState<string>('# Header');
     const ref = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
@@ -33,7 +32,7 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
     if (editing) {
         return (
             <div ref={ref} className='text-editor' >
-                <MDEditor value={value} onChange={(v) => setValue(v || '')} />
+                <MDEditor value={cell.content} onChange={(v) => setValue(v || '')} />
             </div>
         );
     }
@@ -41,7 +40,7 @@ const TextEditor: React.FC<TextEditorProps> = ({ cell }) => {
     return (
         <div onClick={() => setEditing(true)} className='text-editor card' >
             <div className="card-content">
-                <MDEditor.Markdown source={value} />
+                <MDEditor.Markdown source={cell.content} />
             </div>
         </div>
     )
