@@ -1,5 +1,6 @@
 import React from 'react';
 import { Cell } from '../state';
+import CodeCell from './code-cell';
 
 
 interface CellListItemProps {
