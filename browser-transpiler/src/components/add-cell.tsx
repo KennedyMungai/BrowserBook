@@ -1,4 +1,5 @@
 import React from 'react';
+import './add-cell.css';
 
 
 const AddCell = () => {
