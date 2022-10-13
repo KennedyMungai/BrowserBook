@@ -12,9 +12,9 @@ const ActionBar: React.FC<ActionBarProps> = ({ id }) => {
 
     return (
         <div>
-            <button>Up</button>
-            <button>Down</button>
-            <button>Delete</button>
+            <button onClick={ }>Up</button>
+            <button onClick={ }>Down</button>
+            <button onClick={ }>Delete</button>
         </div>
     )
 }
