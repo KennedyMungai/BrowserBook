@@ -22,7 +22,9 @@ const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
             <CodeCell cell={cell} />;
         </>
     } else if (cell.type === 'text') {
-        child = <TextEditor cell={cell} />
+        child = <>
+            <TextEditor cell={cell} />
+        </>
     }
 
     return (
