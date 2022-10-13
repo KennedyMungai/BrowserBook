@@ -4,7 +4,7 @@ import './add-cell.css';
 
 const AddCell: React.FC = () => {
     return (
-        <div>add-cell</div>
+        <h1>Add Cell</div>
     )
 }
 
