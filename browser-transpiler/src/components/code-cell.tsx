@@ -11,7 +11,7 @@ interface CodeCellProps {
 }
 
 
-const CodeCell = () => {
+const CodeCell: React.FC<CodeCellProps> = () => {
     const [code, setCode] = useState<string>('');
     const [input, setInput] = useState<string>('');
     const [err, setErr] = useState<string>('');
