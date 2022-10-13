@@ -2,9 +2,14 @@ import React from 'react';
 import './add-cell.css';
 
 
+interface AddCellProps {
+    nextCellId: string,
+};
+
+
 const AddCell: React.FC = () => {
     return (
-        <h1>Add Cell</div>
+        <h1>Add Cell</h1>
     )
 }
 
