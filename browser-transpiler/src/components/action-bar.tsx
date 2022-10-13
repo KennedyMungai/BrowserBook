@@ -11,7 +11,7 @@ const ActionBar: React.FC<ActionBarProps> = ({ id }) => {
     const { moveCell, deleteCell } = useActions();
 
     return (
-        <div>
+        <div className='action-bar'>
             <button onClick={() => moveCell(id, 'up')} className='button is-primary is-small'>
                 <span className="icon"><i className="fas fa-arrow-up"></i></span>
             </button>
