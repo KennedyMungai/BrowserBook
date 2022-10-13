@@ -20,7 +20,10 @@ const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
     }
 
     return (
-        <div>{child}</div>
+        <div>
+            <ActionBar id={cell.id} />
+            {child}
+        </div>
     );
 }
 
