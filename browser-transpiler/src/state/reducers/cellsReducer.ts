@@ -38,7 +38,7 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
             const targetIndex = direction === 'up' ? index - 1 : index + 1;
 
             if (targetIndex < 0 || targetIndex > state.order.length - 1) {
-                return;
+                return state;
             }
 
             state.order[index] = state.order[targetIndex];
