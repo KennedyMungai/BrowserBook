@@ -1,4 +1,11 @@
 import React from 'react';
+import { Cell } from '../state';
+
+
+interface CellListItemProps {
+    cell: Cell,
+
+};
 
 
 const CellListItem: React.FunctionComponent = () => {
