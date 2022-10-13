@@ -8,7 +8,7 @@ interface CellListItemProps {
 };
 
 
-const CellListItem: React.FunctionComponent = () => {
+const CellListItem: React.FunctionComponent<CellListItemProps> = () => {
     return (
         <div>cell-list-item</div>
     )
