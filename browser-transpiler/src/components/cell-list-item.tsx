@@ -24,6 +24,7 @@ const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
     } else if (cell.type === 'text') {
         child = <>
             <TextEditor cell={cell} />
+            <ActionBar id={cell.id} />
         </>
     }
 
