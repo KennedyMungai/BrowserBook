@@ -3,6 +3,12 @@ import CodeEditor from './codeEditor';
 import Preview from './Preview';
 import bundle from '../bundler';
 import Resizable from './resizable';
+import { Cell } from '../state';
+
+
+interface CodeCellProps {
+    cell: Cell,
+}
 
 
 const CodeCell = () => {
