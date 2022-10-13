@@ -1,6 +1,11 @@
 import React from 'react';
 
 
+interface ActionBarProps {
+    id: string;
+}
+
+
 const ActionBar: React.FC = () => {
     return (
         <div>
