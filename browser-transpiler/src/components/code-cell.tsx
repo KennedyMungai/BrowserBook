@@ -20,7 +20,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
 
     useEffect(() => {
         const timer = setTimeout(async () => {
-            const output = await bundle(input);
+            const output = await bundle(cell.content);
             setCode(output.code);
             setErr(output.err);
         }, 1000);
@@ -28,14 +28,14 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
         return () => {
             clearTimeout(timer);
         };
-    }, [input]);
+    }, [cell.content]);
 
     return (
         <Resizable direction='vertical'>
             <div>
                 <Resizable direction='horizontal'>
                     <CodeEditor
-                        initialValue='const a = 1'
+                        initialValue={cell.content}
                         onChange={(value) => updateCell(cell.id, value)}
                     />
                 </Resizable>
