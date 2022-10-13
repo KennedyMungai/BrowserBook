@@ -50,6 +50,9 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
                 type: action.payload.type,
                 id: randomId()
             };
+
+            state.data[cell.id] = cell;
+
             return state;
         default:
             return state;
