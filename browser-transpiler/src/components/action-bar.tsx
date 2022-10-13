@@ -6,7 +6,7 @@ interface ActionBarProps {
 }
 
 
-const ActionBar: React.FC = () => {
+const ActionBar: React.FC<ActionBarProps> = ({ id }) => {
     return (
         <div>
             <button>Up</button>
