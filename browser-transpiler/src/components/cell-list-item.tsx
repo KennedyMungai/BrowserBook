@@ -10,6 +10,14 @@ interface CellListItemProps {
 
 
 const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
+    let child: JSX.Element;
+
+    if (cell.type === 'code') {
+        child = <CodeCell />;
+    } else if (cell.type === 'text') {
+        child = <TextEditor />
+    }
+
     return (
         <div>cell-list-item</div>
     )
