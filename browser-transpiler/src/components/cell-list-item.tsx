@@ -19,8 +19,8 @@ const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
     }
 
     return (
-        <div>cell-list-item</div>
-    )
+        <div>{child}</div>
+    );
 }
 
 export default CellListItem;
