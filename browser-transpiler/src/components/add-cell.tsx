@@ -7,7 +7,7 @@ interface AddCellProps {
 };
 
 
-const AddCell: React.FC = () => {
+const AddCell: React.FC<AddCellProps> = () => {
     return (
         <h1>Add Cell</h1>
     )
