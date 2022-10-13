@@ -15,7 +15,7 @@ const CellListItem: React.FunctionComponent<CellListItemProps> = ({ cell }) => {
     if (cell.type === 'code') {
         child = <CodeCell cell={cell} />;
     } else if (cell.type === 'text') {
-        child = <TextEditor />
+        child = <TextEditor cell={cell} />
     }
 
     return (
