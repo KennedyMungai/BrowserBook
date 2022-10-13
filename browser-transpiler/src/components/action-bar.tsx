@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ActionBar = () => {
+const ActionBar: React.FC = () => {
     return (
         <div>action-bar</div>
     )
