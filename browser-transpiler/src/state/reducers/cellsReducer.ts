@@ -29,6 +29,7 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
             state.data[id].content = content;
             return;
         case ActionType.DELETE_CELL:
+            delete state.data[action.payload];
             return;
         case ActionType.MOVE_CELL:
             return state;
