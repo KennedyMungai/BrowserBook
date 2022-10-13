@@ -48,7 +48,7 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
             const cell: Cell = {
                 content: '',
                 type: action.payload.type,
-                id: ''
+                id: randomId()
             };
             return state;
         default:
