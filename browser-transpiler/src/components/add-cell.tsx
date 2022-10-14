@@ -21,7 +21,7 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
                     <span className="icon is-small">
                         <i className="fas fa-plus"></i>
                     </span>
-                    Code
+                    <span>Code</span>
                 </button>
 
                 <button
