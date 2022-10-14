@@ -1,5 +1,6 @@
 .add-cell {
     position: relative;
+    opacity: 0;
 }
 
 .add-cell .divider {
