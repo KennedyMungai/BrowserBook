@@ -26,7 +26,7 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
 
                 <button
                     onClick={() => insertCellBefore(nextCellId, 'text')}
-                    className=''
+                    className='button is-rounded is-primary is-small'
                 >
                     Text
                 </button>
