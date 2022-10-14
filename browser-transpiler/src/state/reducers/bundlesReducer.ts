@@ -12,3 +12,14 @@ interface BundlesState {
 }
 
 const initialState: BundlesState = {};
+
+const reducer = produce((state: BundlesState = initialState, action: Action): BundlesState => {
+    switch (action.type) {
+        case ActionType.BUNDLE_START:
+            return state;
+        case ActionType.BUNDLE_COMPLETE:
+            return state;
+        default:
+            return state;
+    }
+});
