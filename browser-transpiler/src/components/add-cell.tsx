@@ -13,7 +13,7 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
 
     return (
         <h1>
-            <button onClick={ }>Code</button>
+            <button onClick={() => insertCellBefore(nextCellId, 'code')}>Code</button>
             <button onClick={ }>Text</button>
         </h1>
     )
