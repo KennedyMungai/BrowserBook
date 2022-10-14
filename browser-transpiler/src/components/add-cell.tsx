@@ -12,7 +12,10 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
     const { insertCellBefore } = useActions();
 
     return (
-        <h1>Add Cell</h1>
+        <h1>
+            <button>Code</button>
+            <button>Text</button>
+        </h1>
     )
 }
 
