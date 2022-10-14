@@ -17,7 +17,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
 
     useEffect(() => {
         const timer = setTimeout(async () => {
-            const output = await bundle(cell.content);
+
         }, 1000);
 
         return () => {
