@@ -10,3 +10,5 @@ interface BundlesState {
         err: string,
     }
 }
+
+const initialState: BundlesState = {};
