@@ -48,4 +48,4 @@ export interface BundleStartAction {
     }
 };
 
-export type Action = MoveCellAction | UpdateCellAction | InsertCellAfterAction | DeleteCellAction;
+export type Action = MoveCellAction | UpdateCellAction | InsertCellAfterAction | DeleteCellAction | BundleStartAction | BundleCompleteAction;
