@@ -53,6 +53,11 @@ export const insertCellBefore = (id: string | null, type: CellTypes): InsertCell
 
 export const createBundle = (cellId: string, input: string) => {
     return (dispatch: Dispatch<Action>) => {
-
-    })
+        dispatch({
+            type: ActionType.BUNDLE_START,
+            payload: {
+                cellId
+            }
+        })
+    }
 };
