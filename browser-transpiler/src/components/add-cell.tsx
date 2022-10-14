@@ -13,8 +13,8 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
 
     return (
         <h1>
-            <button>Code</button>
-            <button>Text</button>
+            <button onClick={ }>Code</button>
+            <button onClick={ }>Text</button>
         </h1>
     )
 }
