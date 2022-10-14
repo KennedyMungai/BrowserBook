@@ -6,7 +6,7 @@
 }
 
 .add-cell:active {
-    opacity: 0;
+    opacity: 0 !important;
     transition: opacity 0s;
 }
 
