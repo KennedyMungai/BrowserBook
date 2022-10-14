@@ -20,7 +20,10 @@ const CellList: React.FC = () => {
     ));
 
     return (
-        <div>{renderedCells}</div>
+        <div>
+            {renderedCells}
+            <AddCell nextCellId={null} />
+        </div>
     )
 }
 
