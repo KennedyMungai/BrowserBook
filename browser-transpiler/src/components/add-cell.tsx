@@ -4,11 +4,11 @@ import './add-cell.css';
 
 
 interface AddCellProps {
-    nextCellId: string | null,
+    previousCellId: string | null,
 };
 
 
-const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
+const AddCell: React.FC<AddCellProps> = ({ previousCellId: nextCellId }) => {
     const { insertCellBefore } = useActions();
 
     return (
