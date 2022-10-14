@@ -15,6 +15,7 @@ interface CodeCellProps {
 
 const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
     const { updateCell, createBundle } = useActions();
+    useTypedSelector((state) => state.bundles[cell.id]);
 
     useEffect(() => {
         const timer = setTimeout(async () => {
