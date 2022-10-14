@@ -13,7 +13,7 @@ interface CodeCellProps {
 
 
 const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
-    const { updateCell } = useActions();
+    const { updateCell, createBundle } = useActions();
 
     useEffect(() => {
         const timer = setTimeout(async () => {
