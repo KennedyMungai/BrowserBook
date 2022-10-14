@@ -28,7 +28,10 @@ const AddCell: React.FC<AddCellProps> = ({ nextCellId }) => {
                     onClick={() => insertCellBefore(nextCellId, 'text')}
                     className='button is-rounded is-primary is-small'
                 >
-                    Text
+                    <span className="icon is-small">
+                        <i className="fas fa-plus"></i>
+                    </span>
+                    <span>Text</span>
                 </button>
             </div>
             <div className="divider"></div>
