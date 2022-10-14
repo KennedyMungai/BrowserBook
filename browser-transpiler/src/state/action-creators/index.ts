@@ -61,5 +61,16 @@ export const createBundle = (cellId: string, input: string) => {
         });
 
         const result = await bundle(input);
+
+        dispatch({
+            type: ActionType.BUNDLE_COMPLETE,
+            payload: {
+                cellId,
+                bundle: {
+                    code: result.code,
+                    err: result.err
+                }
+            }
+        });
     }
 };
