@@ -4,7 +4,7 @@ import './add-cell.css';
 
 
 interface AddCellProps {
-    nextCellId: string,
+    nextCellId: string | null,
 };
 
 
