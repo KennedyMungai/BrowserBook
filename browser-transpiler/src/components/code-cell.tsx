@@ -13,8 +13,6 @@ interface CodeCellProps {
 
 
 const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
-    const [code, setCode] = useState<string>('');
-    const [err, setErr] = useState<string>('');
     const { updateCell } = useActions();
 
     useEffect(() => {
