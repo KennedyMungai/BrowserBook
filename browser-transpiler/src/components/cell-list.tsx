@@ -13,9 +13,9 @@ const CellList: React.FC = () => {
     });
 
     const renderedCells = cells.map((cell) => (
-        <Fragment>
+        <Fragment key={cell.id}>
             <AddCell nextCellId={cell.id} />
-            <CellListItem key={cell.id} cell={cell} />
+            <CellListItem cell={cell} />
         </Fragment>
     ));
 
