@@ -66,10 +66,7 @@ export const createBundle = (cellId: string, input: string) => {
             type: ActionType.BUNDLE_COMPLETE,
             payload: {
                 cellId,
-                bundle: {
-                    code: result.code,
-                    err: result.err
-                }
+                bundle: result
             }
         });
     }
