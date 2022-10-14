@@ -5,6 +5,7 @@ import cellsReducer from './cellsReducer';
 
 const reducers = combineReducers({
     cells: cellsReducer,
+    bundles: reducer,
 });
 
 export default reducers;
