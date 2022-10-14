@@ -10,3 +10,8 @@
     width: 100%;
     z-index: -1;
 }
+
+.add-cell .add-buttons {
+    display: flex;
+    justify-content: center;
+}
