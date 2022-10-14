@@ -26,8 +26,7 @@ export interface InsertCellAfterAction {
 export interface UpdateCellAction {
     type: ActionType.UPDATE_CELL;
     payload: {
-        id: string,
-        content: string
+        cellId: string,
     }
 }
 
