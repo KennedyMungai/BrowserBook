@@ -18,15 +18,12 @@ const CellList: React.FC = () => {
         </Fragment>
     ));
 
-    renderedCells.push(
-        <div className={cells.length === 0 ? 'force-visible' : ''}>
-            <AddCell nextCellId={null} />
-        </div>
-    );
-
     return (
         <div>
             {renderedCells}
+            <div className={cells.length === 0 ? 'force-visible' : ''}>
+                <AddCell nextCellId={null} />
+            </div>
         </div>
     )
 }
