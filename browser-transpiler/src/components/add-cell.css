@@ -3,6 +3,10 @@
     opacity: 0;
 }
 
+.add-cell:hover {
+    opacity: 100%;
+}
+
 .add-cell .divider {
     position: absolute;
     top: 50%;
