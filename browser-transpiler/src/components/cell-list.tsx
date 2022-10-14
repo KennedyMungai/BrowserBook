@@ -13,10 +13,10 @@ const CellList: React.FC = () => {
     });
 
     const renderedCells = cells.map((cell) => (
-        <>
+        <Fragment>
             <AddCell nextCellId={cell.id} />
             <CellListItem key={cell.id} cell={cell} />
-        </>
+        </Fragment>
     ));
 
     return (
