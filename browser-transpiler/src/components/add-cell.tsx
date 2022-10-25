@@ -3,13 +3,15 @@ import { useActions } from '../hooks/use-actions';
 import './add-cell.css';
 
 
-interface AddCellProps {
+interface AddCellProps
+{
     previousCellId: string | null,
 };
 
 
-const AddCell: React.FC<AddCellProps> = ({ previousCellId: nextCellId }) => {
-    const { insertCellBefore } = useActions();
+const AddCell: React.FC<AddCellProps> = ({ previousCellId: nextCellId }) =>
+{
+    const { insertCellAfter: insertCellBefore } = useActions();
 
     return (
         <div className='add-cell'>

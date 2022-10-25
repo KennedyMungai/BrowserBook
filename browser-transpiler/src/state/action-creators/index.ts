@@ -1,17 +1,19 @@
 import { ActionType } from "../action-types";
-import {
-    DeleteCellAction,
-    InsertCellAfterAction,
-    MoveCellAction,
-    UpdateCellAction,
-    Action
-} from '../actions';
+import
+    {
+        DeleteCellAction,
+        InsertCellAfterAction,
+        MoveCellAction,
+        UpdateCellAction,
+        Action
+    } from '../actions';
 import { CellTypes, Direction } from "../cell";
 import { Dispatch } from "redux";
 import bundle from '../../bundler';
 
 
-export const updateCell = (id: string, content: string): UpdateCellAction => {
+export const updateCell = (id: string, content: string): UpdateCellAction =>
+{
     return {
         type: ActionType.UPDATE_CELL,
         payload: {
@@ -21,14 +23,16 @@ export const updateCell = (id: string, content: string): UpdateCellAction => {
     };
 };
 
-export const deleteCell = (id: string): DeleteCellAction => {
+export const deleteCell = (id: string): DeleteCellAction =>
+{
     return {
         type: ActionType.DELETE_CELL,
         payload: id
     };
 };
 
-export const moveCell = (id: string, direction: Direction): MoveCellAction => {
+export const moveCell = (id: string, direction: Direction): MoveCellAction =>
+{
     return {
         type: ActionType.MOVE_CELL,
         payload: {
@@ -38,7 +42,8 @@ export const moveCell = (id: string, direction: Direction): MoveCellAction => {
     }
 };
 
-export const insertCellBefore = (id: string | null, type: CellTypes): InsertCellAfterAction => {
+export const insertCellAfter = (id: string | null, type: CellTypes): InsertCellAfterAction =>
+{
     return {
         type: ActionType.INSERT_CELL_AFTER,
         payload: {
@@ -49,8 +54,10 @@ export const insertCellBefore = (id: string | null, type: CellTypes): InsertCell
 };
 
 
-export const createBundle = (cellId: string, input: string) => {
-    return async (dispatch: Dispatch<Action>) => {
+export const createBundle = (cellId: string, input: string) =>
+{
+    return async (dispatch: Dispatch<Action>) =>
+    {
         dispatch({
             type: ActionType.BUNDLE_START,
             payload: {
