@@ -4,9 +4,12 @@ import AddCell from './add-cell';
 import CellListItem from './cell-list-item';
 
 
-const CellList: React.FC = () => {
-    const cells = useTypedSelector(({ cells: { order, data } }) => {
-        return order.map((id) => {
+const CellList: React.FC = () =>
+{
+    const cells = useTypedSelector(({ cells: { order, data } }) =>
+    {
+        return order.map((id) =>
+        {
             return data[id];
         });
     });
@@ -18,11 +21,14 @@ const CellList: React.FC = () => {
         </Fragment>
     ));
 
+    renderedCells.push(
+        <div className={cells.length === 0 ? 'force-visible' : ''}>
+            <AddCell previousCellId={null} />
+        </div>
+    );
+
     return (
         <div>
-            <div className={cells.length === 0 ? 'force-visible' : ''}>
-                <AddCell previousCellId={null} />
-            </div>
             {renderedCells}
         </div>
     )
