@@ -4,7 +4,8 @@ import { Action } from "../actions";
 import { Cell } from "../cell";
 
 
-interface CellsState {
+interface CellsState
+{
     loading: boolean;
     error: string | null;
     order: string[],
@@ -22,8 +23,10 @@ const initialState: CellsState = {
     }
 }
 
-const cellsReducer = produce((state: CellsState = initialState, action: Action): CellsState | void => {
-    switch (action.type) {
+const cellsReducer = produce((state: CellsState = initialState, action: Action): CellsState | void =>
+{
+    switch (action.type)
+    {
         case ActionType.UPDATE_CELL:
             const { id, content } = action.payload;
             state.data[id].content = content;
@@ -37,7 +40,8 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
             const index = state.order.findIndex((id) => id === action.payload.id);
             const targetIndex = direction === 'up' ? index - 1 : index + 1;
 
-            if (targetIndex < 0 || targetIndex > state.order.length - 1) {
+            if (targetIndex < 0 || targetIndex > state.order.length - 1)
+            {
                 return state;
             }
 
@@ -55,9 +59,11 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
 
             const foundIndex = state.order.findIndex(id => id === action.payload.id);
 
-            if (foundIndex < 0) {                                             
-                state.order.push(cell.id);
-            } else {
+            if (foundIndex < 0)
+            {
+                state.order.unshift(cell.id);
+            } else
+            {
                 state.order.splice(foundIndex + 1, 0, cell.id);
             }
 
@@ -67,7 +73,8 @@ const cellsReducer = produce((state: CellsState = initialState, action: Action):
     }
 });
 
-const randomId = () => {
+const randomId = () =>
+{
     return Math.random().toString(36).substring(2, 5);
 };
 
