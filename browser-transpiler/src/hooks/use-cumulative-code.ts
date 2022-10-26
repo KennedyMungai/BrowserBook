@@ -60,5 +60,5 @@ export const useCumulativeCode = (cellId: string) =>
         }
 
         return cumulativeCode;
-    });
+    }).join('\n');
 };
