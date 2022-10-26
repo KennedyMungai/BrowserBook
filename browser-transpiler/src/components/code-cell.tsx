@@ -51,7 +51,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
 
                 {
                     !bundle || bundle.loading
-                        ? <div className="">Loading...</div>
+                        ? <div className="progress-cover"></div>
                         : <Preview code={bundle.code} err={bundle.err} />
                 }
             </div>
