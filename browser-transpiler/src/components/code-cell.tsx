@@ -36,12 +36,12 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                         }
                         else
                         {
-                            document.querySelector('#root').innerHTML = JSON.stringify(value);
+                            root.innerHTML = JSON.stringify(value);
                         }
                     }
                     else
                     {
-                        document.querySelector('#root').innerHTML = value;
+                        root.innerHTML = value;
                     }
                 }
             `
