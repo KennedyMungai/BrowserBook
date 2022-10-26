@@ -50,6 +50,8 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                 }
             `;
 
+        const showFuncNoOp = 'var show = () => {}';
+
         const cumulativeCode = [
             `
                 import _React from 'react';
