@@ -36,6 +36,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
         {
             clearTimeout(timer);
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [cell.content, cell.id, createBundle]);
 
     return (
