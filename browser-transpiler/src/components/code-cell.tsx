@@ -36,7 +36,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                     {
                         if(value.$$typeof && value.props)
                         {
-                            ReactDOM.render(value, root);
+                            _ReactDOM.render(value, root);
                         }
                         else
                         {
