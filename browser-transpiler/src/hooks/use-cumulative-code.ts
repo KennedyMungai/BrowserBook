@@ -42,7 +42,7 @@ export const useCumulativeCode = (cellId: string) =>
         {
             if (c.type === 'code')
             {
-                if (c.id === cell.id)
+                if (c.id === cellId)
                 {
                     cumulativeCode.push(showFunc)
                 }
@@ -53,7 +53,7 @@ export const useCumulativeCode = (cellId: string) =>
                 cumulativeCode.push(c.content);
             }
 
-            if (c.id === cell.id)
+            if (c.id === cellId)
             {
                 break;
             }
