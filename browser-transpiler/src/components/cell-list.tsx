@@ -33,7 +33,7 @@ const CellListItem: React.FC<CellListItemProps> = ({ cell }) =>
         );
     }
 
-    return <div className="cell-list-item">{child}</div>;
+    return <div className="cell-list-item cell-list">{child}</div>;
 };
 
 export default CellListItem;
