@@ -21,6 +21,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
     const cumulativeCode = useTypedSelector((state) =>
     {
         const { data, order } = state.cells;
+        const orderedCells = order.map(id => data[id]);
     });
 
     useEffect(() =>
