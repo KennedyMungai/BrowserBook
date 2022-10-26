@@ -5,6 +5,7 @@ import Resizable from './resizable';
 import { Cell } from '../state';
 import { useActions } from '../hooks/use-actions';
 import { useTypedSelector } from '../hooks/use-typed-selector';
+import './code-cell.css';
 
 
 interface CodeCellProps
