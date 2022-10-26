@@ -18,11 +18,6 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
     const { updateCell, createBundle } = useActions();
     const bundle = useTypedSelector((state) => state.bundles[cell.id]);
 
-    useEffect(() =>
-    {
-        createBundle(cell.id, cell.content);
-    }, []);
-
 
     useEffect(() =>
     {
