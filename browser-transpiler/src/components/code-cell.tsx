@@ -28,7 +28,14 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                 const show = (value) => {
                     if(typeof value === 'object')
                     {
-                        document.querySelector('#root').innerHTML = JSON.stringify(value);
+                        if(value.$$typeof && value.props)
+                        {
+
+                        }
+                        else
+                        {
+                            document.querySelector('#root').innerHTML = JSON.stringify(value);
+                        }
                     }
                     else
                     {
