@@ -30,8 +30,10 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                     {
                         document.querySelector('#root').innerHTML = JSON.stringify(value);
                     }
-
-                    document.querySelector('#root').innerHTML = value;
+                    else
+                    {
+                        document.querySelector('#root').innerHTML = value;
+                    }
                 }
             `
         ];
