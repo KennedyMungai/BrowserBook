@@ -31,6 +31,11 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
             {
                 cumulativeCode.push(c.content);
             }
+
+            if (c.id === cell.id)
+            {
+                break;
+            }
         }
     });
 
