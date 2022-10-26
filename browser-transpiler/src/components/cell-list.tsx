@@ -1,4 +1,5 @@
 import './cell-list-item.css';
+import './cell-list.css';
 import { Cell } from '../state';
 import CodeCell from './code-cell';
 import TextEditor from './text-editor';
