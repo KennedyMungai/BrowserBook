@@ -58,6 +58,14 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
         {
             if (c.type === 'code')
             {
+                if (c.id === cell.id)
+                {
+                    cumulativeCode.push(showFunc)
+                }
+                else
+                {
+                    cumulativeCode.push(showFuncNoOp);
+                }
                 cumulativeCode.push(c.content);
             }
 
