@@ -29,7 +29,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                 import _ReactDOM from 'react-dom';
 
 
-                const show = (value) => {
+                var show = (value) => {
                     const root = document.querySelector('#root');
 
                     if(typeof value === 'object')
