@@ -30,7 +30,7 @@ const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
                     {
                         if(value.$$typeof && value.props)
                         {
-
+                            ReactDOM.render(value, document.querySelector('#root'));
                         }
                         else
                         {
