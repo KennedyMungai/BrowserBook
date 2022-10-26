@@ -1,34 +1,34 @@
-import React, { Fragment } from 'react';
-import { useTypedSelector } from '../hooks/use-typed-selector';
-import AddCell from './add-cell';
-import CellListItem from './cell-list-item';
+import './cell-list-item.css';
+import { Cell } from '../state';
+import CodeCell from './code-cell';
+import TextEditor from './text-editor';
+import ActionBar from './action-bar';
 
-
-const CellList: React.FC = () =>
-{
-    const cells = useTypedSelector(({ cells: { order, data } }) =>
-    {
-        return order.map((id) =>
-        {
-            return data[id];
-        });
-    });
-
-    const renderedCells = cells.map((cell) => (
-        <Fragment key={cell.id}>
-            <CellListItem cell={cell} />
-            <AddCell previousCellId={cell.id} />
-        </Fragment>
-    ));
-
-    return (
-        <div>
-            <div className={cells.length === 0 ? 'force-visible' : ''}>
-                <AddCell previousCellId={null} />
-            </div>
-            {renderedCells}
-        </div>
-    )
+interface CellListItemProps {
+  cell: Cell;
 }
 
-export default CellList;
+const CellListItem: React.FC<CellListItemProps> = ({ cell }) => {
+  let child: JSX.Element;
+  if (cell.type === 'code') {
+    child = (
+      <>
+        <div className="action-bar-wrapper">
+          <ActionBar id={cell.id} />
+        </div>
+        <CodeCell cell={cell} />
+      </>
+    );
+  } else {
+    child = (
+      <>
+        <TextEditor cell={cell} />
+        <ActionBar id={cell.id} />
+      </>
+    );
+  }
+
+  return <div className="cell-list-item">{child}</div>;
+};
+
+export default CellListItem;
