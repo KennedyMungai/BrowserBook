@@ -7,21 +7,32 @@ import { useActions } from '../hooks/use-actions';
 import { useTypedSelector } from '../hooks/use-typed-selector';
 
 
-interface CodeCellProps {
+interface CodeCellProps
+{
     cell: Cell,
 }
 
 
-const CodeCell: React.FC<CodeCellProps> = ({ cell }) => {
+const CodeCell: React.FC<CodeCellProps> = ({ cell }) =>
+{
     const { updateCell, createBundle } = useActions();
     const bundle = useTypedSelector((state) => state.bundles[cell.id]);
 
-    useEffect(() => {
-        const timer = setTimeout(async () => {
+    useEffect(() =>
+    {
+        createBundle(cell.id, cell.content);
+    }, []);
+
+
+    useEffect(() =>
+    {
+        const timer = setTimeout(async () =>
+        {
             createBundle(cell.id, cell.content);
         }, 1000);
 
-        return () => {
+        return () =>
+        {
             clearTimeout(timer);
         };
     }, [cell.content, cell.id, createBundle]);
