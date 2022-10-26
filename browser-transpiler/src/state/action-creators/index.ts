@@ -1,12 +1,14 @@
 import { ActionType } from "../action-types";
 import
-    {
-        DeleteCellAction,
-        InsertCellAfterAction,
-        MoveCellAction,
-        UpdateCellAction,
-        Action
-    } from '../actions';
+{
+    DeleteCellAction,
+    InsertCellAfterAction,
+    MoveCellAction,
+    UpdateCellAction,
+    BundleStartAction,
+    BundleCompleteAction,
+    Action
+} from '../actions';
 import { CellTypes, Direction } from "../cell";
 import { Dispatch } from "redux";
 import bundle from '../../bundler';
